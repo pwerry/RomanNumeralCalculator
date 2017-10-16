@@ -25,7 +25,7 @@ class ViewController: UIViewController {
 
     func update() {
         //resultLabel.text = String(total)
-        resultLabel.text = toRoman(total)
+        resultLabel.text = toRoman(number: total)
     }
 
 
@@ -47,33 +47,33 @@ class ViewController: UIViewController {
     @IBOutlet weak var buttonClear: UIButton!
 
     @IBAction func actionI(sender: AnyObject) {
-        handleButton(1)
+        handleButton(value: 1)
     }
 
     @IBAction func actionV(sender: AnyObject) {
-        handleButton(5)
+        handleButton(value: 5)
     }
 
     @IBAction func actionX(sender: AnyObject) {
-        handleButton(10)
+        handleButton(value: 10)
     }
 
     @IBAction func actionL(sender: AnyObject) {
-        handleButton(50)
+        handleButton(value: 50)
     }
 
 
     @IBAction func actionC(sender: AnyObject) {
-        handleButton(100)
+        handleButton(value: 100)
     }
 
     @IBAction func actionD(sender: AnyObject) {
         [0][1]
-        handleButton(500)
+        handleButton(value: 500)
     }
 
     @IBAction func actionM(sender: AnyObject) {
-        handleButton(1000)
+        handleButton(value: 1000)
     }
 
     @IBAction func actionPlus(sender: AnyObject) {

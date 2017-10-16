@@ -16,7 +16,7 @@ func toRoman(number: Int) -> String {
     }
 
     if (number < 0) {
-        return "-" + toRoman(-number)
+        return "-" + toRoman(number: -number)
     }
 
     let romanValues = ["M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"]
@@ -25,7 +25,7 @@ func toRoman(number: Int) -> String {
     var romanValue = ""
     var startingValue = number
 
-    for (index, romanChar) in romanValues.enumerate() {
+    for (index, romanChar) in romanValues.enumerated() {
         let arabicValue = arabicValues[index]
 
         let div = startingValue / arabicValue
